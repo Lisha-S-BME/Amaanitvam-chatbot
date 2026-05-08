@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaanitvam Foundation - AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="logo.png" alt="Amaanitvam Foundation Logo" class="header-logo">
+            <div class="header-text">
+                <h2>Amaanitvam Assistant</h2>
+                <p>Here to help you 24/7</p>
+            </div>
+        </div>
+        
+        <div id="chat-box" class="chat-box"></div>
+        
+        <div class="suggestion-chips" id="suggestion-chips">
+            <div class="suggestion-chip" onclick="quickAsk('About Foundation')">🏛️ About Us</div>
+            <div class="suggestion-chip" onclick="quickAsk('How to donate')">❤️ Donate</div>
+            <div class="suggestion-chip" onclick="quickAsk('How to volunteer')">🙋 Volunteer</div>
+            <div class="suggestion-chip" onclick="quickAsk('What are your projects')">📘 Projects</div>
+        </div>
+        
+        <div class="chat-input">
+            <input 
+                type="text" 
+                id="user-input" 
+                placeholder="Ask me anything about Amaanitvam Foundation..."
+                autocomplete="off"
+            >
+            <button onclick="sendMessage()" class="send-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13"></path>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="powered-by">
+            Powered by Amaanitvam Foundation
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
